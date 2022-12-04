@@ -1,0 +1,250 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color:hsl(300, 43%, 22%);
+}
+
+h1{
+  font-weight: 700;
+  font-size:42px;
+}
+
+h2{
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+h3{
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  color:hsl(333, 80%, 67%);
+}
+
+p{
+  line-height: 20px;
+}
+
+/*Main Container*/
+
+#MainContainer{
+  width:983px;
+  height: 600px;
+  padding:75px 90px;
+  background-image: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
+  background-position: 0px 0px, 200px 400px;
+  background-size: 50%, 50%;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+/*Top Area*/
+
+#TopArea{
+  display: flex;
+  flex-direction: row;
+  margin-bottom:20px;
+}
+
+#IntroSection{
+  flex:1;
+  margin:0px 50px 0px 0px;
+  /*padding:0px 119px 0px 0px;*/
+}
+
+#IntroSection p{
+  width:350px;
+}
+
+#StarSection{
+  flex:2;
+  margin-top:40px;
+}
+
+#StarSection ul{
+  list-style: none;
+}
+
+#StarSection ul br{
+  display:none;
+}
+
+#StarSection li{
+  margin:15px 0px;
+  background:hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding:15px;
+  width:400px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#StarSection ul li:nth-child(2){
+  margin-left: 40px;
+}
+
+#StarSection ul li:nth-child(3){
+  margin-left: 80px;
+}
+
+#StarSection li span{
+  margin-right:20px;
+}
+
+/*Bottom Area*/
+
+#BottomArea{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+
+.ReviewCard{
+  background:hsl(300, 43%, 22%);
+  width:315px;
+  padding:25px;
+  margin:0 13px;
+  color:#fff;
+  border-radius: 15px;
+}
+
+.ReviewCard:first-child{
+  margin-left:0px;
+}
+
+.ReviewCard:nth-child(2){
+  margin-top:40px;
+}
+
+.ReviewCard:nth-child(3){
+  margin-top:80px;
+}
+
+.fa{
+  color:gold;
+  margin-right:5px;
+}
+
+.NamePicArea{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+
+.NameVerification{
+  flex:1;
+}
+
+.ProfileImage img{
+  border-radius:50px;
+  height: 40px;
+  width:40px;
+  margin:10px 15px 10px 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+
+  body{
+    padding:0px;
+    margin:0px;
+  }
+
+  #IntroSection p{
+    width:100%;
+  }
+
+  #MainContainer{
+    width:375px;
+    height: 100%;
+    padding:0px;
+    box-shadow: none;
+    background-image: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
+    background-position: 120px 0px, 200px 400px;
+    background-size: 75%, 50%;
+    background-repeat: no-repeat;
+  }
+
+  #TopArea{
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #IntroSection{
+    margin:0px;
+  }
+
+  #StarSection{
+    margin:0px;
+  }
+
+  #StarSection ul{
+    margin:0px;
+    padding:0px;
+  }
+
+  #StarSection ul br{
+    display:block;
+  }
+
+  #StarSection ul .fa{
+    margin-bottom:20px;
+  }
+
+  #StarSection li{
+    margin:15px 0px;
+    background:hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding:15px;
+    width:320px;
+    text-align: center;
+  }
+
+  #StarSection ul li:nth-child(2){
+    margin-left: 0px;
+  }
+
+  #StarSection ul li:nth-child(3){
+    margin-left: 0px;
+  }
+
+  #StarSection li span{
+    margin-right:20px;
+    width: 100%;
+  }
+
+  #BottomArea{
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .ReviewCard{
+    width:300px;
+    margin:0px;
+  }
+
+  .ReviewCard:first-child{
+    margin-left:0px;
+  }
+
+  .ReviewCard:nth-child(2){
+    margin-top:20px;
+  }
+
+  .ReviewCard:nth-child(3){
+    margin-top:20px;
+  }
+
+}
